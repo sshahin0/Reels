@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/fragment_trim_cut">
+
+    <RelativeLayout
+        android:id="@+id/videoViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        app:layout_constraintHeight_percent=".7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.daasuu.mp4compose.player.GPUPlayerView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <FrameLayout
+            android:id="@+id/black_mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@android:color/black"
+            android:elevation="10dp"
+            android:visibility="invisible">
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:paddingStart="6dp"
+        android:paddingEnd="0dp"
+        android:elevation="5dp"
+        android:id="@+id/playBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/backgroundColor"
+        android:scaleType="fitXY"
+        android:tint="@color/tint_color"
+        app:layout_constraintEnd_toStartOf="@+id/simpleBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoViewContainer"
+        app:layout_constraintWidth_percent=".1"
+        app:layout_constraintHeight_percent=".056"
+        app:srcCompat="@drawable/play" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/playBtn"
+        app:layout_constraintEnd_toStartOf="@+id/simpleBtn"
+        app:layout_constraintStart_toStartOf="@+id/simpleBtn"
+        app:layout_constraintTop_toTopOf="@+id/playBtn">
+    </View>
+
+    <ImageButton
+        android:elevation="5dp"
+        android:id="@+id/cameraBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/backgroundColor"
+        android:padding="4dp"
+        android:scaleType="fitXY"
+        android:tint="@color/tint_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintWidth_percent=".1"
+        app:layout_constraintHeight_percent=".056"
+        app:layout_constraintStart_toEndOf="@+id/advanceBtn"
+        app:layout_constraintTop_toBottomOf="@+id/videoViewContainer"
+        app:srcCompat="@drawable/camera" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cameraBtn"
+        app:layout_constraintEnd_toEndOf="@+id/advanceBtn"
+        app:layout_constraintTop_toTopOf="@+id/cameraBtn">
+    </View>
+
+    <ImageView
+        android:elevation="5dp"
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoViewContainer" />
+
+    <View
+        android:elevation="0dp"
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btnBackground"
+        app:layout_constraintBottom_toBottomOf="@id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/cameraBtn"
+        app:layout_constraintStart_toStartOf="@+id/playBtn"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playBtn" />
+
+    <TextView
+        android:id="@+id/advanceBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/advanced"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cameraBtn"
+        app:layout_constraintEnd_toStartOf="@+id/cameraBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/videoViewContainer" />
+
+    <TextView
+        android:id="@+id/simpleBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/simple"
+        android:textAlignment="center"
+        android:textColor="@color/activeColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/playBtn"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/playBtn"
+        app:layout_constraintTop_toBottomOf="@+id/videoViewContainer" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_textfield"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/playBtn"
+        app:layout_constraintTop_toBottomOf="@+id/videoViewContainer" />
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_divider_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/advanceBtn"
+        app:layout_constraintStart_toEndOf="@+id/simpleBtn"
+        app:layout_constraintTop_toBottomOf="@+id/videoViewContainer" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_textfield"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/cameraBtn"
+        app:layout_constraintTop_toBottomOf="@+id/videoViewContainer" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrubberContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/advanceBtn">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/advanceScrubBarGroup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/endButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="@+id/movableScrubBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.68"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/end_here_after_press_trim" />
+
+            <ImageButton
+                android:id="@+id/startButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="@+id/movableScrubBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.32"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/start_here_trim" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/movableScrubBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_indicator" />
+
+            <ImageView
+                android:id="@+id/timeSelectionLeft"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:rotation="180"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movableScrubBar"
+                app:srcCompat="@drawable/ic_selected_time" />
+
+            <ImageView
+                android:id="@+id/timeSelectionRight"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="8dp"
+                android:rotation="180"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movableScrubBar"
+                app:srcCompat="@drawable/ic_selected_time" />
+
+            <TextView
+                android:id="@+id/timeMiddleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:text="@string/_00_00"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <TextView
+                android:id="@+id/startTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/_00_00"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@+id/timeSelectionLeft"
+                app:layout_constraintStart_toEndOf="@+id/timeSelectionLeft"
+                app:layout_constraintTop_toTopOf="@+id/timeSelectionLeft" />
+
+            <TextView
+                android:id="@+id/endTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/_00_00"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@+id/timeSelectionRight"
+                app:layout_constraintEnd_toStartOf="@+id/timeSelectionRight"
+                app:layout_constraintTop_toTopOf="@+id/timeSelectionRight" />
+
+            <com.sunfun.slideshow.view.scrubber.VideoScrubBarAdvance
+                android:id="@+id/movableScrubBar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/btnBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.sunfun.slideshow.view.scrubber.VideoScrubBarSimple
+            android:id="@+id/fixedScrubBar"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:background="@color/btnBackground"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

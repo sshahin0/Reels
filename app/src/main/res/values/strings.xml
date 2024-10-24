@@ -1,0 +1,150 @@
+<resources>
+    <array name="crop_button_panel_resource">
+        <item>@drawable/ic_free_size</item>
+        <item>@drawable/ic_instagram</item>
+        <item>@drawable/ic_4_5</item>
+        <item>@drawable/ic_5_4</item>
+        <item>@drawable/ic_16_9</item>
+        <item>@drawable/ic_3_2</item>
+        <item>@drawable/ic_4_3</item>
+        <item>@drawable/ic_square</item>
+        <item>@drawable/ic_9_16</item>
+        <item>@drawable/ic_2_3</item>
+        <item>@drawable/ic_3_4</item>
+    </array>
+
+    <string name="app_name">Slide Show</string>
+    <string name="crop">Crop</string>
+    <string name="trim_cut">Trim &amp; Cut</string>
+    <string name="flip_rotate">Flip/Rotate</string>
+    <string name="filter">Filter</string>
+    <string name="add_music">Add Music</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="edit_video">Edit Video</string>
+    <string name="title_activity_video_picker">VideoPickerActivity</string>
+    <string name="all">All Videos</string>
+    <string name="editing_text">This app exports high resolution video that\'s why it may take some time in video rendering, depending on your video file size.</string>
+    <string name="warning_message">All progress will be lost. \n Do you want to reset?</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="volume">Volume</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="rotate_right">Rotate\nRight</string>
+    <string name="rotate_left">Rotate\nLeft</string>
+    <string name="flip_vertical">Flip\nVertical</string>
+    <string name="flip_horizontal">Flip\nHorizontal</string>
+    <string name="simple">Simple</string>
+    <string name="advanced">Advanced</string>
+
+    <string name="_00_00">00:00</string>
+    <string name="back">Back</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="itunes">Music</string>
+    <string name="library">Library</string>
+    <string name="recorder">Recorder</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="music_gallery">Music Gallery</string>
+    <string name="featured_music">Featured Music</string>
+    <string name="recommended">Recommended for you.</string>
+    <string name="best_of">Best of the Week</string>
+    <string name="all_cate">All Categories</string>
+
+    <string-array name="view_gallery_options">
+        <item>Newest First</item>
+        <item>Oldest First</item>
+    </string-array>
+
+    <string-array name="video_quality_options">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="file_type_options">
+        <item>Mov</item>
+        <item>Mp4</item>
+    </string-array>
+
+    <string-array name="crop_button_panel_titles">
+        <item>Free Size</item>
+        <item>Instagram</item>
+        <item>4:5</item>
+        <item>5:4</item>
+        <item>16:9</item>
+        <item>3:2</item>
+        <item>4:3</item>
+        <item>Square</item>
+        <item>9:16</item>
+        <item>2:3</item>
+        <item>3:4</item>
+    </string-array>
+
+    <string-array name="crop_button_panel_ratios">
+        <item>Free Size</item>
+        <item>4:4</item>
+        <item>4:5</item>
+        <item>5:4</item>
+        <item>16:9</item>
+        <item>3:2</item>
+        <item>4:3</item>
+        <item>2:2</item>
+        <item>9:16</item>
+        <item>2:3</item>
+        <item>3:4</item>
+    </string-array>
+
+    <string-array name="icon_categories_best_of_week">
+        <item>@drawable/trending_song</item>
+        <item>@drawable/featured_song</item>
+        <item>@drawable/popular_song</item>
+        <item>@drawable/best_new_song</item>
+    </string-array>
+
+    <string-array name="icon_categories_all">
+        <item>@drawable/acoustic_song</item>
+        <item>@drawable/ambient_song</item>
+        <item>@drawable/cinematic_song</item>
+        <item>@drawable/club_party_song</item>
+        <item>@drawable/hip_hop_song</item>
+        <item>@drawable/horror_song</item>
+        <item>@drawable/kids_song</item>
+        <item>@drawable/playful_song</item>
+        <item>@drawable/pop_song</item>
+        <item>@drawable/relaxing_song</item>
+        <item>@drawable/rock_song</item>
+        <item>@drawable/romantic_song</item>
+        <item>@drawable/emotional_song</item>
+        <item>@drawable/world_song</item>
+        <item>@drawable/top_chart_song</item>
+    </string-array>
+
+    <string name="music_json">{ \"data\" : {\"purchaseInfo\":{\"inAppSubsStartIndex\":\"1\",\"subscriptions\":[\"ERSViewController\",\"VideoSubscriptionVC\",\"SubscriptionVCGIF\",\"SubscriptionVC\"],\"isLaunchRandom\":\"0\",\"buttonTitle\":\"START 03 Days Free TRIAL\",\"count\":\"165\",\"subsOP\":\"week\",\"launchSubscription\":\"VideoSubscriptionVC\",\"newSubscription\":{\"boxTitle\":\"Start 03 Days Free Trial\",\"subtitle\":{\"dummy\":\"Free for 03 days, then ppp \\/ ttt\",\"size\":14,\"text\":\"\"},\"title\":{\"size\":25,\"text\":\"Continue To Trial\"}},\"launchScreenBool\":0,\"isInAppRandom\":\"0\",\"inAppSubscription\":\"VideoSubscriptionVC\",\"showSubscriptionInFirstLaunch\":1,\"exportRestriction\":0,\"subscriptionToView\":\"SelectionVC\",\"skpop\":1},\"numberofFreeVideo\":0,\"songfeatures\":{\"bottom_cat\":{\"contents\":[{\"songs\":[{\"fn\":\"Acoustic_Guitar_Piano_.mp3\",\"dn\":\"Acoustic Guitar Piano \"},{\"fn\":\"Acoustic_Loop.mp3\",\"dn\":\"Acoustic Loop\"},{\"fn\":\"Clapping_Ukulele.mp3\",\"dn\":\"Clapping Ukulele\"},{\"fn\":\"Feeling_Melancholy.mp3\",\"dn\":\"Feeling Melancholy\"},{\"fn\":\"Fine_by_Myself.mp3\",\"dn\":\"Fine By Myself\"},{\"fn\":\"Free_As_a_Bird.mp3\",\"dn\":\"Free As A Bird\"},{\"fn\":\"Fun_Guitar_And_Ukulele.mp3\",\"dn\":\"Fun Guitar And Ukulele\"},{\"fn\":\"Happy_Home.mp3\",\"dn\":\"Happy Home\"},{\"fn\":\"Happy_Lazy_Strumming.mp3\",\"dn\":\"Happy Lazy Strumming\"},{\"fn\":\"Happy_Ukulele.mp3\",\"dn\":\"Happy Ukulele\"},{\"fn\":\"Lonely_Ever_After.mp3\",\"dn\":\"Lonely Ever After\"},{\"fn\":\"Uplifting_Acoustic.mp3\",\"dn\":\"Uplifting Acoustic\"},{\"fn\":\"Walk_In_The_Park.mp3\",\"dn\":\"Walk In The Park\"},{\"fn\":\"Working_Folks.mp3\",\"dn\":\"Working Folks\"}],\"name\":\"Acoustic\"},{\"songs\":[{\"fn\":\"Crossing_The_Border.mp3\",\"dn\":\"Crossing The Border\"},{\"fn\":\"Ice_Berg.mp3\",\"dn\":\"Ice Berg\"},{\"fn\":\"Inspire.mp3\",\"dn\":\"Inspire\"},{\"fn\":\"Island_Fun.mp3\",\"dn\":\"Island Fun\"},{\"fn\":\"Island_Playtime.mp3\",\"dn\":\"Island Playtime\"},{\"fn\":\"Midnight_City.mp3\",\"dn\":\"Midnight City\"},{\"fn\":\"Milky_Way.mp3\",\"dn\":\"Milky Way\"},{\"fn\":\"Murky_Swamp.mp3\",\"dn\":\"Murky Swamp\"},{\"fn\":\"Night_Flight.mp3\",\"dn\":\"Night Flight\"},{\"fn\":\"Pure_Water.mp3\",\"dn\":\"Pure Water\"},{\"fn\":\"Rumble.mp3\",\"dn\":\"Rumble\"},{\"fn\":\"Thinking.mp3\",\"dn\":\"Thinking\"},{\"fn\":\"This_Old_Man.mp3\",\"dn\":\"This Old Man\"},{\"fn\":\"Trust.mp3\",\"dn\":\"Trust\"}],\"name\":\"Ambient\"},{\"songs\":[{\"fn\":\"Action_Movie_Music.mp3\",\"dn\":\"Action Movie Music\"},{\"fn\":\"Autumn_Satin_Theme.mp3\",\"dn\":\"Autumn Satin Theme\"},{\"fn\":\"Autumn_Waltz.mp3\",\"dn\":\"Autumn Waltz\"},{\"fn\":\"Beautiful_Way_to_End.mp3\",\"dn\":\"Beautiful Way To End\"},{\"fn\":\"Building_Suspens.mp3\",\"dn\":\"Building Suspens\"},{\"fn\":\"Cinematic_Horror.mp3\",\"dn\":\"Cinematic Horror\"},{\"fn\":\"Cinematic_Suspense.mp3\",\"dn\":\"Cinematic Suspense\"},{\"fn\":\"Cinematic_drums_Choir.mp3\",\"dn\":\"Cinematic Drums Choir\"},{\"fn\":\"Epic_Cinematic.mp3\",\"dn\":\"Epic Cinematic\"},{\"fn\":\"Epic_Film.mp3\",\"dn\":\"Epic Film\"},{\"fn\":\"Epic_Movie_Trailer.mp3\",\"dn\":\"Epic Movie Trailer\"},{\"fn\":\"Haunting_Cinematic_Music.mp3\",\"dn\":\"Haunting Cinematic Music\"},{\"fn\":\"Holding_on_Cinematic.mp3\",\"dn\":\"Holding On Cinematic\"},{\"fn\":\"Inspiring_Epic_Trailer.mp3\",\"dn\":\"Inspiring Epic Trailer\"},{\"fn\":\"Sadness_Cinematic.mp3\",\"dn\":\"Sadness Cinematic\"},{\"fn\":\"The_Mission_Loop.mp3\",\"dn\":\"The Mission Loop\"}],\"name\":\"Cinematic\"},{\"songs\":[{\"fn\":\"Are_You_Feeling_This.mp3\",\"dn\":\"Are You Feeling This\"},{\"fn\":\"Beach_Fun.mp3\",\"dn\":\"Beach Fun\"},{\"fn\":\"Dance_Elevation.mp3\",\"dn\":\"Dance Elevation\"},{\"fn\":\"Electro_Club_Banger.mp3\",\"dn\":\"Electro Club Banger\"},{\"fn\":\"Electronic_Dubstep.mp3\",\"dn\":\"Electronic Dubstep\"},{\"fn\":\"Endogeny.mp3\",\"dn\":\"Endogeny\"},{\"fn\":\"Modern_Dance.mp3\",\"dn\":\"Modern Dance\"},{\"fn\":\"Night_at_The_Club.mp3\",\"dn\":\"Night At The Club\"},{\"fn\":\"So_Electro.mp3\",\"dn\":\"So Electro\"}],\"name\":\"Club Party\"},{\"songs\":[{\"fn\":\"Bonfire_In_Jungle.mp3\",\"dn\":\"Bonfire In Jungle\"},{\"fn\":\"Cranked_With_Fireworks.mp3\",\"dn\":\"Cranked With Fireworks\"},{\"fn\":\"Dancing_Til_Sunrise.mp3\",\"dn\":\"Dancing Til Sunrise\"},{\"fn\":\"Days_of_hope.mp3\",\"dn\":\"Days Of Hope\"},{\"fn\":\"Hammerhead_And_Cranked.mp3\",\"dn\":\"Hammerhead And Cranked\"},{\"fn\":\"High_Water.mp3\",\"dn\":\"High Water\"},{\"fn\":\"Hip_Hop_Dance.mp3\",\"dn\":\"Hip Hop Dance\"},{\"fn\":\"Immortal_Full.mp3\",\"dn\":\"Immortal Full\"},{\"fn\":\"Modern_Dance.mp3\",\"dn\":\"Modern Dance\"},{\"fn\":\"Raising_Questions.mp3\",\"dn\":\"Raising Questions\"},{\"fn\":\"Riot_full.mp3\",\"dn\":\"Riot Full\"},{\"fn\":\"Spark_In_Air.mp3\",\"dn\":\"Spark In Air\"}],\"name\":\"HiP Hop\"},{\"songs\":[{\"fn\":\"Heavy_Metal_Horror.mp3\",\"dn\":\"Heavy Metal Horror\"},{\"fn\":\"Horror_Movie.mp3\",\"dn\":\"Horror Movie\"},{\"fn\":\"Horror_Of_The_Underworld.mp3\",\"dn\":\"Horror Of The Underworld\"},{\"fn\":\"Nightmare_Horro.mp3\",\"dn\":\"Nightmare Horro\"},{\"fn\":\"Scary_Horror-ambience.mp3\",\"dn\":\"Scary Horror-Ambience\"},{\"fn\":\"The_Dark_Skies.mp3\",\"dn\":\"The Dark Skies\"},{\"fn\":\"The_Heartbeat_Of_Halloween.mp3\",\"dn\":\"The Heartbeat Of Halloween\"},{\"fn\":\"The_Horror_Music.mp3\",\"dn\":\"The Horror Music\"},{\"fn\":\"The_Kids_Old_Record.mp3\",\"dn\":\"The Kids Old Record\"}],\"name\":\"Horror\"},{\"songs\":[{\"fn\":\"Baa_Baa_Black_Sheep.mp3\",\"dn\":\"Baa Baa Black Sheep\"},{\"fn\":\"Happy_Kids.mp3\",\"dn\":\"Happy Kids\"},{\"fn\":\"Here_We_Go.mp3\",\"dn\":\"Here We Go\"},{\"fn\":\"Kids_and_Puppies.mp3\",\"dn\":\"Kids And Puppies\"},{\"fn\":\"Little_Scoundrel.mp3\",\"dn\":\"Little Scoundrel\"},{\"fn\":\"Twinkle_Twinkle.mp3\",\"dn\":\"Twinkle Twinkle\"}],\"name\":\"Kids\"},{\"songs\":[{\"fn\":\"Deep_Thoughts.mp3\",\"dn\":\"Deep Thoughts\"},{\"fn\":\"Drum_Night.mp3\",\"dn\":\"Drum Night\"},{\"fn\":\"Emotional_Piano.mp3\",\"dn\":\"Emotional Piano\"},{\"fn\":\"Fantasy_On_Ice.mp3\",\"dn\":\"Fantasy On Ice\"},{\"fn\":\"Friends_Forever.mp3\",\"dn\":\"Friends Forever\"},{\"fn\":\"Happy_Floating_Around.mp3\",\"dn\":\"Happy Floating Around\"},{\"fn\":\"Live_The_Moment.mp3\",\"dn\":\"Live The Moment\"},{\"fn\":\"Looks_Like_Success.mp3\",\"dn\":\"Looks Like Success\"},{\"fn\":\"Mid_Summer_Evening.mp3\",\"dn\":\"Mid Summer Evening\"},{\"fn\":\"Old_Time_Memories.mp3\",\"dn\":\"Old Time Memories\"},{\"fn\":\"Shooting_The_Breeze.mp3\",\"dn\":\"Shooting The Breeze\"},{\"fn\":\"Such_A_Great_Day.mp3\",\"dn\":\"Such A Great Day\"},{\"fn\":\"Wonder_River.mp3\",\"dn\":\"Wonder River\"}],\"name\":\"Playful\"},{\"songs\":[{\"fn\":\"Autumn_of_Life.mp3\",\"dn\":\"Autumn Of Life\"},{\"fn\":\"Birth_of_A_New_Day.mp3\",\"dn\":\"Birth Of A New Day\"},{\"fn\":\"Bright Sunshine.mp3\",\"dn\":\"Bright Sunshine\"},{\"fn\":\"Eternity.mp3\",\"dn\":\"Eternity\"},{\"fn\":\"Full_Of_Inspiration.mp3\",\"dn\":\"Full Of Inspiration\"},{\"fn\":\"Funny_Song.mp3\",\"dn\":\"Funny Song\"},{\"fn\":\"Happy_Uplifting.mp3\",\"dn\":\"Happy Uplifting\"},{\"fn\":\"Keep The Dream Alive.mp3\",\"dn\":\"Keep The Dream Alive\"},{\"fn\":\"Mozart_Alla_Turca.mp3\",\"dn\":\"Mozart Alla Turca\"},{\"fn\":\"Softly_Inspiring.mp3\",\"dn\":\"Softly Inspiring\"},{\"fn\":\"Soul.mp3\",\"dn\":\"Soul\"},{\"fn\":\"Virgo_Full.mp3\",\"dn\":\"Virgo Full\"}],\"name\":\"Pop\"},{\"songs\":[{\"fn\":\"Calm Relaxing.mp3\",\"dn\":\"Calm Relaxing\"},{\"fn\":\"Motivational_Business.mp3\",\"dn\":\"Motivational Business\"},{\"fn\":\"New_day.mp3\",\"dn\":\"New Day\"},{\"fn\":\"Peace and Harmony.mp3\",\"dn\":\"Peace And Harmony\"},{\"fn\":\"Peaceful Country.mp3\",\"dn\":\"Peaceful Country\"},{\"fn\":\"Relax_A_While_full.mp3\",\"dn\":\"Relax A While Full\"},{\"fn\":\"Spiritual.mp3\",\"dn\":\"Spiritual\"},{\"fn\":\"Sweet_Hope.mp3\",\"dn\":\"Sweet Hope\"},{\"fn\":\"Teardrops.mp3\",\"dn\":\"Teardrops\"},{\"fn\":\"Windy_Days.mp3\",\"dn\":\"Windy Days\"}],\"name\":\"Relaxing\"},{\"songs\":[{\"fn\":\"Boston_Rocks.mp3\",\"dn\":\"Boston Rocks\"},{\"fn\":\"Corona_Polaroid.mp3\",\"dn\":\"Corona Polaroid\"},{\"fn\":\"Easy_Ride.mp3\",\"dn\":\"Easy Ride\"},{\"fn\":\"Get_Rock_Solid.mp3\",\"dn\":\"Get Rock Solid\"},{\"fn\":\"Happy Now.mp3\",\"dn\":\"Happy Now\"},{\"fn\":\"Isberg_Glitch.mp3\",\"dn\":\"Isberg Glitch\"},{\"fn\":\"Paranoid.mp3\",\"dn\":\"Paranoid\"},{\"fn\":\"Powerdriver.mp3\",\"dn\":\"Powerdriver\"},{\"fn\":\"Rock_and_Roll.mp3\",\"dn\":\"Rock And Roll\"},{\"fn\":\"Rocking_Flashbac.mp3\",\"dn\":\"Rocking Flashbac\"},{\"fn\":\"Sports_Rock.mp3\",\"dn\":\"Sports Rock\"}],\"name\":\"Rock\"},{\"songs\":[{\"fn\":\"Autumn_of_Life.mp3\",\"dn\":\"Autumn Of Life\"},{\"fn\":\"Dance_of_Life.mp3\",\"dn\":\"Dance Of Life\"},{\"fn\":\"Happy_Time.mp3\",\"dn\":\"Happy Time\"},{\"fn\":\"In_The_Arms.mp3\",\"dn\":\"In The Arms\"},{\"fn\":\"Just_A_Smile.mp3\",\"dn\":\"Just A Smile\"},{\"fn\":\"Natural_Romance.mp3\",\"dn\":\"Natural Romance\"},{\"fn\":\"New_Love.mp3\",\"dn\":\"New Love\"},{\"fn\":\"Sleeping_Peacefully.mp3\",\"dn\":\"Sleeping Peacefully\"},{\"fn\":\"Some_Beautiful_Day.mp3\",\"dn\":\"Some Beautiful Day\"},{\"fn\":\"Sunday Love.mp3\",\"dn\":\"Sunday Love\"},{\"fn\":\"Sunset_Dreaming.mp3\",\"dn\":\"Sunset Dreaming\"},{\"fn\":\"Sweet_Sweet_Dreams.mp3\",\"dn\":\"Sweet Sweet Dreams\"},{\"fn\":\"Walking_With_You.mp3\",\"dn\":\"Walking With You\"},{\"fn\":\"Winter_Romance.mp3\",\"dn\":\"Winter Romance\"}],\"name\":\"Romantic\"},{\"songs\":[{\"fn\":\"Calm_of_The_East.mp3\",\"dn\":\"Calm Of The East\"},{\"fn\":\"Celtic_Spirit.mp3\",\"dn\":\"Celtic Spirit\"},{\"fn\":\"In_The_Arms_Of_Home.mp3\",\"dn\":\"In The Arms Of Home\"},{\"fn\":\"Italian_Heartbreak.mp3\",\"dn\":\"Italian Heartbreak\"},{\"fn\":\"Sad_Violin__Piano.mp3\",\"dn\":\"Sad Violin  Piano\"},{\"fn\":\"Silent_Cry.mp3\",\"dn\":\"Silent Cry\"}],\"name\":\"Emotional\"},{\"songs\":[{\"fn\":\"Africa.mp3\",\"dn\":\"Africa\"},{\"fn\":\"Arabic_Dance.mp3\",\"dn\":\"Arabic Dance\"},{\"fn\":\"Banana_Carnival.mp3\",\"dn\":\"Banana Carnival\"},{\"fn\":\"Bollywood_Bhangra.mp3\",\"dn\":\"Bollywood Bhangra\"},{\"fn\":\"Camel_Dance.mp3\",\"dn\":\"Camel Dance\"},{\"fn\":\"Carribbean_Funk.mp3\",\"dn\":\"Carribbean Funk\"},{\"fn\":\"Eastern_Charm.mp3\",\"dn\":\"Eastern Charm\"},{\"fn\":\"Funky_Samba.mp3\",\"dn\":\"Funky Samba\"},{\"fn\":\"Happy_India.mp3\",\"dn\":\"Happy India\"},{\"fn\":\"Native_Promise.mp3\",\"dn\":\"Native Promise\"},{\"fn\":\"Night_In_Cuba.mp3\",\"dn\":\"Night In Cuba\"},{\"fn\":\"Spanish_Bar.mp3\",\"dn\":\"Spanish Bar\"},{\"fn\":\"Spanish_Girl.mp3\",\"dn\":\"Spanish Girl\"},{\"fn\":\"Tribal_Spirit.mp3\",\"dn\":\"Tribal Spirit\"},{\"fn\":\"Tunisian_Music.mp3\",\"dn\":\"Tunisian Music\"},{\"fn\":\"Zebra_Dance.mp3\",\"dn\":\"Zebra Dance\"}],\"name\":\"World\"},{\"songs\":[{\"fn\":\"Blue_Lagoon.mp3\",\"dn\":\"Blue Lagoon\"},{\"fn\":\"Cheerful_Morning.mp3\",\"dn\":\"Cheerful Morning\"},{\"fn\":\"Free_As_a_Bird.mp3\",\"dn\":\"Free As A Bird\"},{\"fn\":\"Growing_Up.mp3\",\"dn\":\"Growing Up\"},{\"fn\":\"Happy_Birthday_Piano.mp3\",\"dn\":\"Happy Birthday Piano\"},{\"fn\":\"Happy_Day.mp3\",\"dn\":\"Happy Day\"},{\"fn\":\"Holiday_Sunshine.mp3\",\"dn\":\"Holiday Sunshine\"},{\"fn\":\"Latin_Sensuality.mp3\",\"dn\":\"Latin Sensuality\"},{\"fn\":\"Latin_Sky.mp3\",\"dn\":\"Latin Sky\"},{\"fn\":\"Lonely_Ever_After.mp3\",\"dn\":\"Lonely Ever After\"},{\"fn\":\"Minimal_Inspiration.mp3\",\"dn\":\"Minimal Inspiration\"},{\"fn\":\"Morning_Sunwav.mp3\",\"dn\":\"Morning Sunwav\"},{\"fn\":\"Old_Time_Memories.mp3\",\"dn\":\"Old Time Memories\"},{\"fn\":\"Playtime.mp3\",\"dn\":\"Playtime\"},{\"fn\":\"Song_for_Mom.mp3\",\"dn\":\"Song For Mom\"},{\"fn\":\"Triumphant_Classical_Piano.mp3\",\"dn\":\"Triumphant Classical Piano\"},{\"fn\":\"Wedding_Day.mp3\",\"dn\":\"Wedding Day\"},{\"fn\":\"Welcome_Home.mp3\",\"dn\":\"Welcome Home\"},{\"fn\":\"Welcome_To_My_World.mp3\",\"dn\":\"Welcome To My World\"},{\"fn\":\"Your_Little_Planet.mp3\",\"dn\":\"Your Little Planet\"},{\"fn\":\"day_of_the_wedding.mp3\",\"dn\":\"Day Of The Wedding\"}],\"name\":\"Top Chart\"}],\"title\":\"Featured Music\\nDelicious\"},\"top_cat\":{\"contents\":[{\"songs\":[{\"fn\":\"Acoustic_Guitar_Piano_.mp3\",\"dn\":\"Acoustic Guitar Piano \"},{\"fn\":\"Acoustic_Loop.mp3\",\"dn\":\"Acoustic Loop\"},{\"fn\":\"Clapping_Ukulele.mp3\",\"dn\":\"Clapping Ukulele\"},{\"fn\":\"Feeling_Melancholy.mp3\",\"dn\":\"Feeling Melancholy\"},{\"fn\":\"Fine_by_Myself.mp3\",\"dn\":\"Fine By Myself\"},{\"fn\":\"Free_As_a_Bird.mp3\",\"dn\":\"Free As A Bird\"},{\"fn\":\"Fun_Guitar_And_Ukulele.mp3\",\"dn\":\"Fun Guitar And Ukulele\"},{\"fn\":\"Happy_Home.mp3\",\"dn\":\"Happy Home\"},{\"fn\":\"Happy_Lazy_Strumming.mp3\",\"dn\":\"Happy Lazy Strumming\"},{\"fn\":\"Happy_Ukulele.mp3\",\"dn\":\"Happy Ukulele\"},{\"fn\":\"Lonely_Ever_After.mp3\",\"dn\":\"Lonely Ever After\"},{\"fn\":\"Uplifting_Acoustic.mp3\",\"dn\":\"Uplifting Acoustic\"},{\"fn\":\"Walk_In_The_Park.mp3\",\"dn\":\"Walk In The Park\"},{\"fn\":\"Working_Folks.mp3\",\"dn\":\"Working Folks\"},{\"fn\":\"Crossing_The_Border.mp3\",\"dn\":\"Crossing The Border\"},{\"fn\":\"Ice_Berg.mp3\",\"dn\":\"Ice Berg\"},{\"fn\":\"Inspire.mp3\",\"dn\":\"Inspire\"},{\"fn\":\"Island_Fun.mp3\",\"dn\":\"Island Fun\"},{\"fn\":\"Island_Playtime.mp3\",\"dn\":\"Island Playtime\"},{\"fn\":\"Midnight_City.mp3\",\"dn\":\"Midnight City\"},{\"fn\":\"Milky_Way.mp3\",\"dn\":\"Milky Way\"},{\"fn\":\"Murky_Swamp.mp3\",\"dn\":\"Murky Swamp\"},{\"fn\":\"Night_Flight.mp3\",\"dn\":\"Night Flight\"},{\"fn\":\"Pure_Water.mp3\",\"dn\":\"Pure Water\"},{\"fn\":\"Rumble.mp3\",\"dn\":\"Rumble\"},{\"fn\":\"Thinking.mp3\",\"dn\":\"Thinking\"},{\"fn\":\"This_Old_Man.mp3\",\"dn\":\"This Old Man\"},{\"fn\":\"Trust.mp3\",\"dn\":\"Trust\"}],\"name\":\"Editors Choice\"},{\"songs\":[{\"fn\":\"Action_Movie_Music.mp3\",\"dn\":\"Action Movie Music\"},{\"fn\":\"Autumn_Satin_Theme.mp3\",\"dn\":\"Autumn Satin Theme\"},{\"fn\":\"Autumn_Waltz.mp3\",\"dn\":\"Autumn Waltz\"},{\"fn\":\"Beautiful_Way_to_End.mp3\",\"dn\":\"Beautiful Way To End\"},{\"fn\":\"Building_Suspens.mp3\",\"dn\":\"Building Suspens\"},{\"fn\":\"Cinematic_Horror.mp3\",\"dn\":\"Cinematic Horror\"},{\"fn\":\"Cinematic_Suspense.mp3\",\"dn\":\"Cinematic Suspense\"},{\"fn\":\"Cinematic_drums_Choir.mp3\",\"dn\":\"Cinematic Drums Choir\"},{\"fn\":\"Epic_Cinematic.mp3\",\"dn\":\"Epic Cinematic\"},{\"fn\":\"Epic_Film.mp3\",\"dn\":\"Epic Film\"},{\"fn\":\"Epic_Movie_Trailer.mp3\",\"dn\":\"Epic Movie Trailer\"},{\"fn\":\"Haunting_Cinematic_Music.mp3\",\"dn\":\"Haunting Cinematic Music\"},{\"fn\":\"Holding_on_Cinematic.mp3\",\"dn\":\"Holding On Cinematic\"},{\"fn\":\"Inspiring_Epic_Trailer.mp3\",\"dn\":\"Inspiring Epic Trailer\"},{\"fn\":\"Sadness_Cinematic.mp3\",\"dn\":\"Sadness Cinematic\"},{\"fn\":\"The_Mission_Loop.mp3\",\"dn\":\"The Mission Loop\"},{\"fn\":\"Are_You_Feeling_This.mp3\",\"dn\":\"Are You Feeling This\"},{\"fn\":\"Beach_Fun.mp3\",\"dn\":\"Beach Fun\"},{\"fn\":\"Dance_Elevation.mp3\",\"dn\":\"Dance Elevation\"},{\"fn\":\"Electro_Club_Banger.mp3\",\"dn\":\"Electro Club Banger\"},{\"fn\":\"Electronic_Dubstep.mp3\",\"dn\":\"Electronic Dubstep\"},{\"fn\":\"Endogeny.mp3\",\"dn\":\"Endogeny\"},{\"fn\":\"Modern_Dance.mp3\",\"dn\":\"Modern Dance\"},{\"fn\":\"Night_at_The_Club.mp3\",\"dn\":\"Night At The Club\"},{\"fn\":\"So_Electro.mp3\",\"dn\":\"So Electro\"}],\"name\":\"Top Tracks\"},{\"songs\":[{\"fn\":\"Bonfire_In_Jungle.mp3\",\"dn\":\"Bonfire In Jungle\"},{\"fn\":\"Cranked_With_Fireworks.mp3\",\"dn\":\"Cranked With Fireworks\"},{\"fn\":\"Dancing_Til_Sunrise.mp3\",\"dn\":\"Dancing Til Sunrise\"},{\"fn\":\"Days_of_hope.mp3\",\"dn\":\"Days Of Hope\"},{\"fn\":\"Hammerhead_And_Cranked.mp3\",\"dn\":\"Hammerhead And Cranked\"},{\"fn\":\"High_Water.mp3\",\"dn\":\"High Water\"},{\"fn\":\"Hip_Hop_Dance.mp3\",\"dn\":\"Hip Hop Dance\"},{\"fn\":\"Immortal_Full.mp3\",\"dn\":\"Immortal Full\"},{\"fn\":\"Modern_Dance.mp3\",\"dn\":\"Modern Dance\"},{\"fn\":\"Raising_Questions.mp3\",\"dn\":\"Raising Questions\"},{\"fn\":\"Riot_full.mp3\",\"dn\":\"Riot Full\"},{\"fn\":\"Spark_In_Air.mp3\",\"dn\":\"Spark In Air\"},{\"fn\":\"Heavy_Metal_Horror.mp3\",\"dn\":\"Heavy Metal Horror\"},{\"fn\":\"Horror_Movie.mp3\",\"dn\":\"Horror Movie\"},{\"fn\":\"Horror_Of_The_Underworld.mp3\",\"dn\":\"Horror Of The Underworld\"},{\"fn\":\"Nightmare_Horro.mp3\",\"dn\":\"Nightmare Horro\"},{\"fn\":\"Scary_Horror-ambience.mp3\",\"dn\":\"Scary Horror-Ambience\"},{\"fn\":\"The_Dark_Skies.mp3\",\"dn\":\"The Dark Skies\"},{\"fn\":\"The_Heartbeat_Of_Halloween.mp3\",\"dn\":\"The Heartbeat Of Halloween\"},{\"fn\":\"The_Horror_Music.mp3\",\"dn\":\"The Horror Music\"},{\"fn\":\"The_Kids_Old_Record.mp3\",\"dn\":\"The Kids Old Record\"}],\"name\":\"Just In\"}],\"title\":\"Featured Music\\nRecommended for you.\"}},\"issubscription\":1}}</string>
+
+    <string name="Title">Title</string>
+    <string name="please_dont">PLEASE DON\'T CLOSE OR\nlOCK YOUR DEVICE</string>
+    <string name="record_text">Start Record</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="fade_in">Fade In</string>
+    <string name="fade_out">Fade Out</string>
+    <string name="title_activity_share">ShareActivity</string>
+    <string name="share">Share</string>
+    <string name="title_activity_tutorial">TutorialActivity</string>
+    <string name="video_volume">Video Volume</string>
+    <string name="complete_msg">Saved to photo album!</string>
+    <string name="app_not_found">App not found.</string>
+    <string name="save_text">Current frame is saved in you photo gallery</string>
+    <string name="crop_warning">Crop area is too small to process. \n Please choose larger area.</string>
+    <string name="video_error_msg">The video you have selected is not playable</string>
+    <string name="internet_error_msg">Please check internet connection!</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="delete_msg">Do you want to delete this audio?</string>
+    <string name="edit_audio">Edit Audio</string>
+    <string name="recording">Recording...</string>
+    <string name="already_saved">Already Saved!</string>
+    <string name="dont_show">Don\'t show in future</string>
+    <string name="screenshot_text">Would you like to save this Current frame in your phone gallery?</string>
+
+</resources>

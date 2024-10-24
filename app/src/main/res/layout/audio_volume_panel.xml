@@ -1,0 +1,126 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/audioVolumePanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:elevation="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:visibility="invisible"
+    tools:showIn="@layout/content_main">
+
+    <ImageButton
+        android:id="@+id/downBtnVolumePanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:src="@drawable/ic_arrow_down_large"
+        android:tint="@color/tint_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateIds" />
+
+    <ImageView
+        android:id="@+id/divider1"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_divider"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_divider"
+        app:layout_constraintBottom_toTopOf="@+id/downBtnVolumePanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/zeroVolumeBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:elevation="2dp"
+        android:padding="3dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:tint="@color/tint_color_grey"
+        app:layout_constraintBottom_toTopOf="@+id/downBtnVolumePanel"
+        app:layout_constraintEnd_toStartOf="@+id/volumeSeekBar"
+        app:layout_constraintHeight_percent=".2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintWidth_percent=".07"
+        app:srcCompat="@drawable/ic_sound_lower" />
+
+    <ImageView
+        android:id="@+id/fullVolumeBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:elevation="2dp"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/tint_color_grey"
+        app:layout_constraintBottom_toTopOf="@+id/downBtnVolumePanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".2"
+        app:layout_constraintStart_toEndOf="@+id/volumeSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintWidth_percent=".05"
+        app:srcCompat="@drawable/ic_sound_higher" />
+
+    <SeekBar
+        android:id="@+id/volumeSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:progress="100"
+        android:progressDrawable="@drawable/volume_seek_bar_line"
+        android:splitTrack="false"
+        android:thumb="@drawable/volume_seek_thumb"
+        app:layout_constraintBottom_toTopOf="@+id/downBtnVolumePanel"
+        app:layout_constraintEnd_toStartOf="@+id/fullVolumeBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/zeroVolumeBtn"
+        app:layout_constraintTop_toTopOf="@+id/guideline">
+    </SeekBar>
+
+    <TextView
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/video_volume"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="96dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

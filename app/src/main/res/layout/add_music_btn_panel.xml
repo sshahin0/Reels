@@ -1,0 +1,149 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adMusicBtnPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:elevation="1dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:visibility="invisible"
+    tools:showIn="@layout/content_main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/recorderPanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="1dp"
+        android:visibility="invisible"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@color/backgroundColor"
+        app:layout_constraintBottom_toTopOf="@+id/downBtnMusicPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/recordBtn"
+            android:layout_width="@dimen/record_button_width"
+            android:layout_height="@dimen/record_button_width"
+            android:background="@drawable/button_selector_without_border_round"
+            android:src="@drawable/ic_add_music_record"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recordingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/record_text"
+            android:textSize="17sp"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/recordBtn"
+            app:layout_constraintStart_toStartOf="@+id/recordBtn"
+            app:layout_constraintTop_toBottomOf="@+id/recordBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <ImageButton
+        android:id="@+id/storageBtn"
+        android:layout_width="@dimen/image_button_width"
+        android:layout_height="@dimen/image_button_height_high"
+        android:layout_marginEnd="20dp"
+        android:scaleType="center"
+        android:background="@drawable/button_selector_without_border"
+        android:src="@drawable/ic_addmusic_music"
+        app:layout_constraintBottom_toTopOf="@+id/downBtnMusicPanel"
+        app:layout_constraintEnd_toStartOf="@+id/musicGalleryBtn"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/recorderBtn"
+        android:layout_width="@dimen/image_button_width"
+        android:layout_height="@dimen/image_button_height_high"
+        android:background="@drawable/button_selector_without_border"
+        android:src="@drawable/ic_add_music_record"
+        app:layout_constraintBottom_toTopOf="@+id/downBtnMusicPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/musicGalleryBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/musicGalleryBtn"
+        android:layout_width="@dimen/image_button_width"
+        android:layout_height="@dimen/image_button_height_high"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_selector_without_border"
+        android:src="@drawable/ic_add_music_folder"
+        app:layout_constraintBottom_toTopOf="@+id/downBtnMusicPanel"
+        app:layout_constraintEnd_toStartOf="@+id/recorderBtn"
+        app:layout_constraintStart_toEndOf="@+id/storageBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/downBtnMusicPanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:src="@drawable/ic_arrow_down_large"
+        android:tint="@color/tint_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".15"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateIds" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_divider"
+        app:layout_constraintBottom_toTopOf="@+id/downBtnMusicPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/itunes"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/storageBtn"
+        app:layout_constraintStart_toStartOf="@+id/storageBtn"
+        app:layout_constraintTop_toBottomOf="@+id/storageBtn" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/library"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/musicGalleryBtn"
+        app:layout_constraintStart_toStartOf="@+id/musicGalleryBtn"
+        app:layout_constraintTop_toBottomOf="@+id/musicGalleryBtn" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/recorder"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/recorderBtn"
+        app:layout_constraintStart_toStartOf="@+id/recorderBtn"
+        app:layout_constraintTop_toBottomOf="@+id/recorderBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

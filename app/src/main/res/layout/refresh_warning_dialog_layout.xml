@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Warning!"
+        android:textColor="@android:color/black"
+        android:textSize="18sp">
+    </TextView>
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/textView2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Current progress will be lost."
+        android:textSize="14sp" />
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you want to reset?"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_marginTop="16dp"
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:layout_height="match_parent"
+            android:text="CANCEL"
+            android:textColor="@color/activeColor"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_gravity="center"
+            android:layout_weight=".002"
+            android:id="@+id/view2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/okButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textColor="@color/activeColor"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

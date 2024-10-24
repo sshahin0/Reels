@@ -1,0 +1,325 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/dark_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </View>
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:background="@null"
+        android:padding="8dp"
+        android:tint="@color/tint_color_grey"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".11"
+        app:srcCompat="@drawable/ic_back_round" />
+
+    <ImageButton
+        android:id="@+id/deleteBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:background="@null"
+        android:padding="8dp"
+        android:tint="@color/tint_color_grey"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintEnd_toStartOf="@+id/doneButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/backBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".11"
+        app:srcCompat="@drawable/ic_delete" />
+
+
+    <ImageButton
+        android:id="@+id/doneButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:background="@null"
+        android:padding="8dp"
+        android:tint="@color/tint_color_grey"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".11"
+        app:srcCompat="@drawable/ic_done_round" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/edit_audio"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/text_color_white"
+        app:layout_constraintEnd_toEndOf="@+id/audioScrubBarSimple"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/view5"
+        app:layout_constraintVertical_chainStyle="packed">
+    </TextView>
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/darker_border"
+        app:layout_constraintBottom_toTopOf="@+id/audioScrubBarSimple"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHeight_percent=".031"
+        app:layout_constraintStart_toStartOf="@+id/view5">
+    </View>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:background="@null"
+        android:elevation="2dp"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/soundSeekBar"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/soundSeekBar"
+        app:layout_constraintWidth_percent=".05"
+        app:srcCompat="@drawable/ic_sound_lower" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:background="@null"
+        android:elevation="2dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/soundSeekBar"
+        app:layout_constraintEnd_toEndOf="@+id/audioScrubBarSimple"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintTop_toTopOf="@+id/soundSeekBar"
+        app:layout_constraintWidth_percent=".05"
+        app:srcCompat="@drawable/ic_sound_higher" />
+
+    <SeekBar
+        android:id="@+id/soundSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:elevation="2dp"
+        android:progress="100"
+        android:progressDrawable="@drawable/volume_seek_bar_line"
+        android:splitTrack="false"
+        android:thumb="@drawable/volume_seek_thumb"
+        app:layout_constraintBottom_toTopOf="@+id/view6"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView11">
+    </SeekBar>
+
+
+    <com.sunfun.slideshow.view.scrubber.AudioScrubBarSimple
+        android:id="@+id/audioScrubBarSimple"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHeight_percent=".23"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="parent">
+    </com.sunfun.slideshow.view.scrubber.AudioScrubBarSimple>
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/darker_border"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintHeight_percent=".031"
+        app:layout_constraintTop_toBottomOf="@+id/audioScrubBarSimple">
+    </View>
+
+    <TextView
+        android:id="@+id/startTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="2dp"
+        android:text="@string/_00_00"
+        android:textColor="@color/text_color_purple"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/audioScrubBarSimple"
+        app:layout_constraintStart_toStartOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/endTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="2dp"
+        android:text="@string/_00_00"
+        android:textColor="@color/text_color_purple"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/audioScrubBarSimple"
+        app:layout_constraintEnd_toEndOf="@+id/view5" />
+
+
+    <ImageView
+        android:id="@+id/playBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:elevation="2dp"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/tint_color_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/audioSeekBar"
+        app:layout_constraintHeight_percent=".05"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/audioSeekBar"
+        app:layout_constraintWidth_percent=".09"
+        app:srcCompat="@drawable/ic_music_play" />
+
+    <SeekBar
+        android:id="@+id/audioSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:progressDrawable="@drawable/volume_seek_bar_line"
+        android:splitTrack="false"
+        android:thumb="@drawable/play_seek_thumb"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/audioScrubBarSimple"
+        app:layout_constraintStart_toEndOf="@+id/playBtn"
+        app:layout_constraintTop_toBottomOf="@+id/view7">
+    </SeekBar>
+
+    <TextView
+        android:id="@+id/seekTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="22dp"
+        android:elevation="3dp"
+        android:text="@string/_00_00"
+        android:textColor="@color/text_color_purple"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/audioSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/audioSeekBar" />
+
+    <TextView
+        android:id="@+id/seekTotalTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="22dp"
+        android:text="@string/_00_00"
+        android:textColor="@color/text_color_white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/audioSeekBar"
+        app:layout_constraintEnd_toEndOf="@+id/audioSeekBar" />
+
+    <TextView
+        android:id="@+id/fadeInBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fade_in"
+        android:textAllCaps="false"
+        android:textSize="11sp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/fade_button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fadeOutBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".21"
+        app:layout_constraintTop_toBottomOf="@+id/view5">
+    </TextView>
+
+    <TextView
+        android:id="@+id/fadeOutBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fade_out"
+        android:textAllCaps="false"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@android:color/white"
+        android:background="@drawable/fade_button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent=".21"
+        app:layout_constraintStart_toEndOf="@+id/fadeInBtn"
+        app:layout_constraintTop_toBottomOf="@+id/view5">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

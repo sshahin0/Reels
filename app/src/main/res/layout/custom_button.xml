@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="25dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="25dp"
+        app:fb_borderColor="@color/btnBoarderColor"
+        app:fb_borderWidth="1dp"
+        app:fb_defaultColor="@color/btnColor"
+        app:fb_focusColor="#000000"
+        app:fb_iconPosition="left"
+        app:fb_iconResource="@drawable/ic_filter"
+        app:fb_radius="0dp"
+        app:fb_text=""
+        app:fb_textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/flip_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/flipVerticalBtn"
+        app:layout_constraintStart_toStartOf="@+id/flipVerticalBtn"
+        app:layout_constraintTop_toBottomOf="@+id/flipVerticalBtn" />
+
+</LinearLayout>

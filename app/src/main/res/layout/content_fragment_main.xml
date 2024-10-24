@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/fragment_main">
+
+    <RelativeLayout
+        android:id="@+id/videoViewContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:animateLayoutChanges="true"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/mainBtnPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/videoPreviewContainer"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_divider" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/playBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/videoViewContainer"
+        app:layout_constraintEnd_toEndOf="@+id/videoViewContainer"
+        app:layout_constraintStart_toStartOf="@+id/videoViewContainer"
+        app:layout_constraintTop_toTopOf="@+id/videoViewContainer"
+        app:srcCompat="@drawable/ic_play_trans" />
+
+    <include layout="@layout/filter_btn_panel" />
+    <include layout="@layout/add_music_btn_panel" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainBtnPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:fillViewport="true"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:clipToPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/crop"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/cropBtn"
+                    app:layout_constraintStart_toStartOf="@+id/cropBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/cropBtn" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/trim_cut"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/trimCutBtn"
+                    app:layout_constraintStart_toStartOf="@+id/trimCutBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/trimCutBtn" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/flip_rotate"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/flipRotateBtn"
+                    app:layout_constraintStart_toStartOf="@+id/flipRotateBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/flipRotateBtn" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/filter"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/filterBtn"
+                    app:layout_constraintStart_toStartOf="@+id/filterBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/filterBtn" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/add_music"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/addMusicBtn"
+                    app:layout_constraintStart_toStartOf="@+id/addMusicBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/addMusicBtn" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/volume"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/volumeBtn"
+                    app:layout_constraintStart_toStartOf="@+id/volumeBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/volumeBtn" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/tutorial"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/tutorialBtn"
+                    app:layout_constraintStart_toStartOf="@+id/tutorialBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/tutorialBtn" />
+
+                <ImageButton
+                    android:id="@+id/tutorialBtn"
+                    android:layout_width="@dimen/image_button_width"
+                    android:layout_height="@dimen/image_button_height"
+                    android:layout_marginStart="18dp"
+                    android:background="@drawable/button_selector"
+                    android:src="@drawable/ic_tutorial"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:layout_constraintStart_toEndOf="@+id/volumeBtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/volumeBtn"
+                    android:layout_width="@dimen/image_button_width"
+                    android:layout_height="@dimen/image_button_height"
+                    android:layout_marginStart="18dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/button_selector"
+                    android:src="@drawable/ic_volume"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:layout_constraintStart_toEndOf="@+id/addMusicBtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/addMusicBtn"
+                    android:layout_width="@dimen/image_button_width"
+                    android:layout_height="@dimen/image_button_height"
+                    android:layout_marginStart="18dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/button_selector"
+                    android:src="@drawable/ic_music"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:layout_constraintStart_toEndOf="@+id/filterBtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/filterBtn"
+                    android:layout_width="@dimen/image_button_width"
+                    android:layout_height="@dimen/image_button_height"
+                    android:layout_marginStart="18dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/button_selector"
+                    android:src="@drawable/ic_filter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:layout_constraintStart_toEndOf="@+id/flipRotateBtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/flipRotateBtn"
+                    android:layout_width="@dimen/image_button_width"
+                    android:layout_height="@dimen/image_button_height"
+                    android:scaleType="fitCenter"
+                    android:layout_marginStart="18dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:background="@drawable/button_selector"
+                    android:src="@drawable/ic_flip"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/trimCutBtn"
+                    app:layout_constraintTop_toTopOf="parent"
+                  />
+
+                <ImageButton
+                    android:id="@+id/trimCutBtn"
+                    android:layout_width="@dimen/image_button_width"
+                    android:layout_height="@dimen/image_button_height"
+                    android:scaleType="fitCenter"
+                    android:layout_marginStart="18dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:background="@drawable/button_selector"
+                    android:src="@drawable/ic_cut"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cropBtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/cropBtn"
+                    android:layout_width="@dimen/image_button_width"
+                    android:layout_height="@dimen/image_button_height"
+                    android:src="@drawable/ic_crop"
+                    android:scaleType="fitCenter"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:background="@drawable/button_selector"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:paddingTop="24dp"
+            android:text="10:50"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/videoProgressBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.sunfun.slideshow.view.scrubber.VideoScrubBar
+            android:id="@+id/videoProgressBar"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+        </com.sunfun.slideshow.view.scrubber.VideoScrubBar>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

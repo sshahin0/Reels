@@ -1,0 +1,107 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        applicationId "com.sunfun.slideshow"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            debuggable true
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.2.0-alpha01'
+
+    // ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+
+    //FFmepg for video cutting and trimming
+    implementation "com.writingminds:FFmpegAndroid:0.3.2"
+
+    //Stylish button
+    implementation 'com.github.medyo:fancybuttons:1.9.0'
+
+    //Circle Progress Bar
+    implementation 'com.timqi.sectorprogressview:library:2.0.1'
+
+    //Loading dialog
+    implementation 'com.wang.avi:library:2.1.3'
+
+
+    //tab buttons
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+    //MediaPlayer for better seeking in video
+    implementation 'net.protyposis.android.mediaplayer:mediaplayer:4.4.0'
+
+    //for getting crash report
+    implementation('com.crashlytics.sdk.android:crashlytics:2.10.1@aar') {
+        transitive = true
+    }
+
+    //This is for animation. But for now this is now doing anything.
+    implementation 'at.wirecube:additive_animations:1.7.3'
+
+    //This is also for animation but now used yet
+    implementation 'com.daimajia.easing:library:2.1@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    //External video player for playing video
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.10.3'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.10.3'
+
+    //iphone like bounce in recycler view
+    implementation 'me.everything:overscroll-decor-android:1.0.4'
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.0'
+
+    //Gson for creating json from firebase
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    //zip
+    implementation 'com.hzy:libp7zip:1.6.0'
+
+    //Android X related dependency
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // Method 1: Merged version
+    implementation 'com.googlecode.mp4parser:isoparser:1.1.22'
+
+    testImplementation 'junit:junit:4.13-rc-1'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'org.jetbrains:annotations-java5:18.0.0'
+    implementation project(path: ':cropper')
+    implementation project(path: ':mp4compose')
+}

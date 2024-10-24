@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_share">
+
+    <RelativeLayout
+        android:id="@+id/videoViewContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:animateLayoutChanges="true"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/mainBtnPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.daasuu.mp4compose.player.GPUPlayerView
+            android:id="@+id/video_view"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/playBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/videoViewContainer"
+        app:layout_constraintEnd_toEndOf="@+id/videoViewContainer"
+        app:layout_constraintStart_toStartOf="@+id/videoViewContainer"
+        app:layout_constraintTop_toTopOf="@+id/videoViewContainer"
+        app:srcCompat="@drawable/ic_play_trans" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainBtnPanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".5"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="78dp"
+            android:background="@drawable/text_round_background_orange"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Premium Version"
+            android:textAlignment="center"
+            android:textColor="@color/tint_color"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+
+        <ImageButton
+            android:id="@+id/instaBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/insta"
+            app:layout_constraintEnd_toStartOf="@+id/smsBtn"
+            app:layout_constraintHeight_percent=".15"
+            app:layout_constraintStart_toEndOf="@+id/saveBtn"
+            app:layout_constraintTop_toBottomOf="@+id/textView34"
+            app:layout_constraintWidth_percent=".15" />
+
+        <ImageButton
+            android:id="@+id/saveBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gallery"
+            app:layout_constraintEnd_toStartOf="@+id/instaBtn"
+            app:layout_constraintHeight_percent=".15"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView34"
+            app:layout_constraintWidth_percent=".15" />
+
+        <ImageButton
+            android:id="@+id/smsBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/i_msg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".15"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/instaBtn"
+            app:layout_constraintTop_toBottomOf="@+id/textView34"
+            app:layout_constraintWidth_percent=".15" />
+
+
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="48dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/more"
+            app:layout_constraintEnd_toEndOf="@+id/instaBtn"
+            app:layout_constraintHeight_percent=".15"
+            app:layout_constraintStart_toStartOf="@+id/instaBtn"
+            app:layout_constraintTop_toBottomOf="@+id/instaBtn"
+            app:layout_constraintWidth_percent=".15" />
+
+        <ImageButton
+            android:id="@+id/emailBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="48dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/email"
+            app:layout_constraintEnd_toEndOf="@+id/saveBtn"
+            app:layout_constraintHeight_percent=".15"
+            app:layout_constraintStart_toStartOf="@+id/saveBtn"
+            app:layout_constraintTop_toBottomOf="@+id/saveBtn"
+            app:layout_constraintWidth_percent=".15" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/saveBtn"
+            app:layout_constraintStart_toStartOf="@+id/saveBtn"
+            app:layout_constraintTop_toBottomOf="@+id/saveBtn" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Instagram"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/instaBtn"
+            app:layout_constraintStart_toStartOf="@+id/instaBtn"
+            app:layout_constraintTop_toBottomOf="@+id/instaBtn" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="SMS"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/smsBtn"
+            app:layout_constraintStart_toStartOf="@+id/smsBtn"
+            app:layout_constraintTop_toBottomOf="@+id/smsBtn" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="E-mail"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/emailBtn"
+            app:layout_constraintStart_toStartOf="@+id/emailBtn"
+            app:layout_constraintTop_toBottomOf="@+id/emailBtn" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="More"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/moreBtn"
+            app:layout_constraintStart_toStartOf="@+id/moreBtn"
+            app:layout_constraintTop_toBottomOf="@+id/moreBtn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

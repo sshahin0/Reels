@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "656452860475",
+    "firebase_url": "https://cropvideos-d303c.firebaseio.com",
+    "project_id": "cropvideos-d303c",
+    "storage_bucket": "cropvideos-d303c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656452860475:android:916eb00e0e03ff30187a1e",
+        "android_client_info": {
+          "package_name": "com.sunfun.slideshow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656452860475-7rbjt3hmuenfask45945dif6p6967bcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJJpbgcuj3UKrOj4JrrGV48rAC8BIfK94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "656452860475-7rbjt3hmuenfask45945dif6p6967bcf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "656452860475-8dac39bhvom84pthfoe24pkjd26nkad9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sunfun.slideshow",
+                "app_store_id": "1309610014"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

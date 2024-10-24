@@ -1,0 +1,215 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editMusicPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:elevation="1dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:visibility="invisible"
+    tools:showIn="@layout/content_main">
+
+    <TextView
+        android:id="@+id/storageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_quick_storage"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="@string/itunes"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/libraryBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/libraryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_quick_library"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="@string/library"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/recordBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/storageBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_quick_record"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="@string/recorder"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/libraryBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/divider1"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_divider"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/higher_dark_gray"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider1">
+    </View>
+
+    <com.sunfun.slideshow.view.scrubber.AudioScrubBarAdvance
+        android:id="@+id/audioScrubBarAdvance"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/backgroundColor"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4">
+    </com.sunfun.slideshow.view.scrubber.AudioScrubBarAdvance>
+
+    <ImageButton
+        android:id="@+id/musicPlayBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:tint="@color/tint_color"
+        android:scaleType="fitCenter"
+        android:elevation="2dp"
+        android:src="@drawable/ic_music_play"
+        app:layout_constraintBottom_toBottomOf="@+id/audioScrubBarAdvance"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent=".2"
+        app:layout_constraintWidth_percent=".12"
+        app:layout_constraintTop_toBottomOf="@+id/musicTimeText">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/musicPlayIndicator"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_music_play_indicator"
+        android:tint="@color/higher_dark_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/musicPlayBtn"
+        app:layout_constraintEnd_toEndOf="@+id/musicPlayBtn"
+        app:layout_constraintHeight_percent=".04"
+        app:layout_constraintStart_toStartOf="@+id/musicPlayBtn"
+        app:layout_constraintTop_toTopOf="@+id/audioScrubBarAdvance"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".05">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/downBtnEditMusicPanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:src="@drawable/ic_arrow_down_large"
+        android:tint="@color/tint_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".15"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateIds" />
+
+    <ImageView
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_divider"
+        app:layout_constraintBottom_toTopOf="@+id/downBtnEditMusicPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <TextView
+        android:id="@+id/editBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:drawableStart="@drawable/ic_music_edit"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="@string/edit"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/downBtnEditMusicPanel"
+        app:layout_constraintEnd_toStartOf="@+id/deleteBtn"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/audioScrubBarAdvance" />
+
+    <TextView
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_music_delete"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/downBtnEditMusicPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editBtn"
+        app:layout_constraintTop_toBottomOf="@+id/audioScrubBarAdvance" />
+
+    <TextView
+        android:id="@+id/musicTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:singleLine="true"
+        android:maxEms="10"
+        android:ellipsize="marquee"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/musicTimeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+    <TextView
+        android:id="@+id/musicTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/audioScrubBarAdvance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
